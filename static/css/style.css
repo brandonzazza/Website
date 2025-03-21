@@ -50,6 +50,16 @@ header {
     color: #7A7A7A;
 }
 
+.intro {
+    background-image: url('http://127.0.0.1:8000/static/img/home-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    opacity: 0.4;
+}
+
 
 
 
