@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #232127;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between; /* Ensures elements are spaced out */
+    align-items: center;
+    padding: 15px 20px; /* Adds some spacing */
+    color: #EEF2F2;
+    background-color: #415986;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.icon {
+    max-height: 60%;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adds spacing between elements */
+}
+
+.menu {
+    display: flex;
+    gap: 20px; /* Adds spacing between menu items */
+}
+
+.menu-options a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 25px; 
+    font-weight: bold; 
+    padding: 15px 20px; 
+    transition: color 0.3s ease-in-out;
+}
+
+.menu-options:hover {
+    color: #7A7A7A;
+}
+
+
+
+
+
