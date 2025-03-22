@@ -90,7 +90,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    background: linear-gradient(to top, rgba(35, 33, 39, 1), rgba(35, 33, 39, 0)); /* Black overlay with 50% opacity */
     z-index: 1; /* Makes sure the overlay is above the background image */
 }
 
@@ -107,7 +107,66 @@ header {
     font-size: 3rem;
 }
 
+.about-container {
+    display: flex;
+    justify-content: center; /* Centers the about section horizontally */
+    align-items: center; /* Centers the about section vertically */
+    min-height: 100vh; /* Ensure it's centered on the full height of the screen */
+    padding: 20px; /* Optional padding around the container */
+}
+
+/* About section styles */
+.about {
+    display: flex;
+    justify-content: space-between; /* Space the two columns apart */
+    align-items: center; /* Center content vertically */
+    padding: 30px 20px; /* Adjust padding to control spacing */
+    gap: 15px; /* Reduced gap between sections */
+    background-color: #3d436a; /* Background color for the section */
+    color: #EEF2F2; /* White text */
+    border-radius: 10px; 
+    width: 100vw;
+}
+
+/* About text on the left */
+.about-right {
+    display: flex;
+    flex: 1; /* Allow this section to take up equal space */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center;
+    flex-direction: column;
+    padding-right: 15px; /* Reduce padding */
+}
+
+.about-me {
+    display: flex;
+    font-size: 1.5rem; /* Adjust font size for readability */
+    line-height: 1.5; /* Space out the lines a bit */
+}
 
 
+.about-left {
+    flex: 1; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 20px;
+    text-align: center; 
+}
 
+.profile-img {
+    width: 300px; /* Adjust image size */
+    height: 300px; 
+    object-fit: cover; 
+    border-radius: 50%; 
+    border: 5px solid #EEF2F2; 
+    margin-bottom: 15px; 
+}
 
+.profile-name {
+    font-size: 3rem;; /* Slightly smaller name font size */
+    font-weight: bold; /* Make the name bold */
+    color: #EEF2F2; /* White text for the name */
+    margin-bottom: 20px;
+}
