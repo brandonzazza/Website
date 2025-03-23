@@ -107,42 +107,52 @@ header {
     font-size: 3rem;
 }
 
-.about-container {
+section {
     display: flex;
-    justify-content: center; /* Centers the about section horizontally */
-    align-items: center; /* Centers the about section vertically */
-    min-height: 100vh; /* Ensure it's centered on the full height of the screen */
-    padding: 20px; /* Optional padding around the container */
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.section-title{
+    color: #EEF2F2;
+    font-size: 3rem;
+}
+
+.about-container {
+    min-height: 100vh; 
+    gap: 30px;
+    background: linear-gradient(to top, rgba(35, 33, 39, 0), rgba(35, 33, 39, 1));
 }
 
 /* About section styles */
 .about {
     display: flex;
-    justify-content: space-between; /* Space the two columns apart */
-    align-items: center; /* Center content vertically */
-    padding: 30px 20px; /* Adjust padding to control spacing */
-    gap: 15px; /* Reduced gap between sections */
-    background-color: #3d436a; /* Background color for the section */
-    color: #EEF2F2; /* White text */
+    justify-content: space-between; 
+    align-items: center;
+    padding: 30px 20px; 
+    gap: 15px; 
+    color: #EEF2F2;
     border-radius: 10px; 
-    width: 100vw;
+    width: 95vw;
+    background-color: #415986;
 }
 
-/* About text on the left */
+
 .about-right {
     display: flex;
-    flex: 1; /* Allow this section to take up equal space */
+    flex: 1; 
     display: flex;
-    justify-content: center; /* Center content horizontally */
+    justify-content: center; 
     align-items: center;
     flex-direction: column;
-    padding-right: 15px; /* Reduce padding */
+    padding-right: 15px; 
 }
 
 .about-me {
     display: flex;
-    font-size: 1.5rem; /* Adjust font size for readability */
-    line-height: 1.5; /* Space out the lines a bit */
+    font-size: 1.5rem; 
+    line-height: 1.5; 
 }
 
 
@@ -156,7 +166,7 @@ header {
 }
 
 .profile-img {
-    width: 300px; /* Adjust image size */
+    width: 300px; 
     height: 300px; 
     object-fit: cover; 
     border-radius: 50%; 
@@ -164,9 +174,9 @@ header {
     margin-bottom: 15px; 
 }
 
-.profile-name {
-    font-size: 3rem;; /* Slightly smaller name font size */
-    font-weight: bold; /* Make the name bold */
-    color: #EEF2F2; /* White text for the name */
+.profile-text {
+    font-size: 3rem;
+    font-weight: bold; 
+    color: #EEF2F2; 
     margin-bottom: 20px;
 }
